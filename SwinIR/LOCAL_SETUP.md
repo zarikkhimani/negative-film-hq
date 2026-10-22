@@ -48,6 +48,12 @@ It is not a denoising or film-negative conversion step.
 
 ## Environment and reproducibility
 
+Before installing dependencies in a new or existing environment, follow the
+[certificate bootstrap instructions](../DEPENDENCIES.md#python-certificate-security).
+Use pip 26.2.2 or newer and certifi 2026.10.19 or newer. Pip's bundled
+certificates require updating pip itself. The local requirements enforce the
+certifi minimum, and `requirements-lock.txt` records the tested 2026.10.19 release.
+
 Python 3.12 is isolated in `.venv`, created from Codex's bundled Python runtime.
 If that base runtime is removed or moved, recreate the venv using Python 3.12.
 No global Python packages or system settings are changed.

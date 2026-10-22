@@ -6,6 +6,7 @@ rawpy
 tifffile
 imagecodecs
 requests
+certifi>=2026.10.19
 nuitka
 pyopencl
 # AI dust detection. The DirectML build runs the detector on any Windows GPU
